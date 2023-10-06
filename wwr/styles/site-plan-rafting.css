@@ -9,7 +9,7 @@ Fonts are separated by a & */
   --primary-color: #03387c   ;
   --secondary-color: #4b3909 ;
   --accent1-color: #d8c944;
-  --accent2-color: white;
+  --accent2-color: #fdfcf0;
 
   /* change the values below to your chosen font(s) */
   --heading-font: Alegreya;
