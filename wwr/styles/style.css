@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Averia+Libre:wght@700&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -5,8 +7,12 @@
 .logo {
     width: 80px;
 }
+#logo_link {
+    padding-top: 5px;
+}
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
@@ -15,6 +21,7 @@ nav a {
     text-align: center;
     color:#4b3909;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     background-color: #4b3909;
@@ -29,11 +36,18 @@ nav a:hover {
 main section {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 #background {
     height: 725px;
 }
 body {
     background-color: #fdfcf0;
+    font-family: "Averia Libre", Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #d8c944;
@@ -42,6 +56,10 @@ header {
     background-color: #fdfcf0;
     color: #03387c;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #03387c;
@@ -52,22 +70,41 @@ header {
 }
 .home-title {
     color: #03387c;
+    font-family: Alegreya, Georgia, fantasy;
+    font-size: 2em;
+    margin-top: 10px;
+}
+h2 {
+    margin: 0;
 }
 h4 {
     color: #4b3909;
 }
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #d8c944;
+}
 .msg {
     background-color: #03387c;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: #d8c944;
+    font-family: Alegreya, Georgia, fantasy;
 }
 .msg p {
     color: #fdfcf0;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 footer {
     background-color: #4b3909;
     color: #d8c944;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     color:#fdfcf0;
@@ -81,4 +118,7 @@ footer p {
 }
 footer p a:hover {
     text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
 }
