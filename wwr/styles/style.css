@@ -245,7 +245,7 @@ footer .social img {
     padding-top: 15px;
 }
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .rivers-grid {
         display: block;
         height: auto;
     }
@@ -280,6 +280,15 @@ footer .social img {
         width: 80%;
         display: block;
         margin: 0 auto;
+    }
+    .Idaho-title, .Utah-title, .Arizona-title {
+        text-align: center;
+    }
+    .Idaho-img, .Utah-img, .Arizona-img {
+        width: 60%;
+        display: block;
+        height: auto;
+        margin: 20px auto;
     }
     footer {
         margin-top: 25px;
