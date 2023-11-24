@@ -52,7 +52,7 @@ nav {
     background-color: #373a39;
     display: flex;
     justify-content: flex-end;
-    margin-left: 0 auto;
+    margin-left: 0;
 }
 nav a {
     text-align: center;
