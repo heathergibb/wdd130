@@ -138,10 +138,7 @@ nav a:hover {
 
 .pic-couple {
     max-width: 200px;
-    margin-right: 30px;
-    margin-left: 40px;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    margin: -60px 40px;
     float: right;
     border: solid #2e5922 5px;
 }
@@ -236,10 +233,16 @@ footer p {
         width: 30%;
         height: auto;
         display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
     }
     .hi, .intro, .more {
         display: block;
-        padding-bottom: 20px;
+        padding: 0px;
+    }
+    .little-about {
+        text-align: center;
     }
     .pic-links {
         display: block;
@@ -251,6 +254,23 @@ footer p {
     .card-img {
         width: 100px;
         height: 100px;
+    }
+    .pic-couple {
+        display: none;
+    }
+    .curtis, .talia, .alex, .maisie, .eli {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+    }
+    .pics-landscape, .pics-portrait {
+        margin-bottom: 20px;
+    }
+    .descriptions, .talia .descriptions, .maisie .descriptions {
+        text-align: center;
+        margin-bottom: 20px;
     }
     footer {
         margin: 0 auto;
