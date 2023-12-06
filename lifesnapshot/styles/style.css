@@ -111,12 +111,10 @@ nav a:hover {
 }
 
 .little-about {
-    /* margin: 30px; */
     text-align: left;
+    margin-left: 30px;
 }
-.my-family, .curtis, .talia, .alex, .maisie, .eli {
-    display: inline-block;
-}
+
 .pics-portrait {
     max-width: 20%;
     border: solid #2e5922 5px;
@@ -125,9 +123,7 @@ nav a:hover {
     max-width: 30%;
     border: solid #2e5922 5px;
 }
-.little-about {
-    margin-left: 30px;
-}
+
 .subpage-intro {
     font-size: 1.15em;
     margin: 30px;
@@ -146,7 +142,7 @@ nav a:hover {
     background-color: #d8e7d5;
     border: solid #2e5922 2px;
 }
-.descriptions h4, p {
+.descriptions h4, .descriptions p {
     margin: 15px 30px 15px 20px;
     color: #2E5922
 }
@@ -184,19 +180,58 @@ nav a:hover {
     margin: 0px 250px 30px 30px;
 }
 
-.pics-garden-left {
-    width: 150px;
-    height: 150px;
-    float: left;
-    border: solid #2e5922 5px;
-    margin: 30px;
+.top {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    margin: 30px 30px 60px 30px;
 }
-.pics-garden-right {
-    width: 150px;
-    height: 150px;
-    float: right;
+.pic-garden-left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 200px;
+    height: 200px;
     border: solid #2e5922 5px;
-    margin: 30px;
+}
+.pic-garden-right {
+    grid-column: 3/4;
+    grid-row: 1/2;;
+    width: 200px; 
+    height: 200px;
+    border: solid #2e5922 5px;
+}
+.top .subpage-intro {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 0px;
+}
+.start-early, .enjoy-harvest {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 0px 200px 30px 30px;
+
+}
+.start-early img, .enjoy-harvest img {
+    grid-column: 1/3;
+    grid-row: 1/4;
+}
+.start-early .descriptions, .enjoy-harvest .descriptions {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.setbacks, .give-it-a-try {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 0px 30px 30px 200px;
+}
+.setbacks img, .give-it-a-try img {
+    grid-column: 1/3;
+    grid-row: 1/4;
+    justify-self: end;
+}
+.setbacks .descriptions, .give-it-a-try .descriptions {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: right;
 }
 footer {
     background-color: #373a39;
@@ -336,10 +371,10 @@ footer p {
         width: 100px;
         height: 100px;
     }
-    .pic-couple {
+    .pic-couple, .pic-garden-left, .pic-garden-right {
         display: none;
     }
-    .curtis, .talia, .alex, .maisie, .eli {
+    .curtis, .talia, .alex, .maisie, .eli, .top, .start-early, .setbacks, .enjoy-harvest, .give-it-a-try {
         display: block;
         width: 80%;
         margin: 0 auto;
@@ -350,7 +385,7 @@ footer p {
         margin-bottom: 20px;
         max-width: 75%;
     }
-    .descriptions, .talia .descriptions, .maisie .descriptions {
+    .descriptions, .talia .descriptions, .maisie .descriptions, .setbacks .descriptions, .give-it-a-try .descriptions {
         text-align: center;
         margin-bottom: 20px;
     }
